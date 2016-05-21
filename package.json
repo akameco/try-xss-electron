@@ -1,0 +1,45 @@
+{
+  "name": "try-xss-electron",
+  "productName": "TryXssElectron",
+  "version": "0.0.0",
+  "description": "My remarkable app",
+  "license": "MIT",
+  "repository": "akameco/try-xss-electron",
+  "author": {
+    "name": "akameco",
+    "email": "akameco.t@gmail.com",
+    "url": "akameco.github.io"
+  },
+  "electronVersion": "1.1.0",
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --overwrite --all --version=$npm_package_electronVersion"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "electron-debug": "^1.0.0",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "electron-packager": "^7.0.2",
+    "electron-prebuilt": "^1.1.0",
+    "xo": "^0.15.1"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XSS</title>
+</head>
+<body>
+	<form method="get" action="/post">
+		<textarea name="message" cols="50" rows="7"></textarea>
+		<input type="submit" />
+	</form>
+	<ul class="message--list">
+		<% for(let msg of messages) { %>
+			<li><%- msg %></li>
+		<% } %>
+	</ul>
+</body>
+</html>
