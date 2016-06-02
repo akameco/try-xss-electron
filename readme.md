@@ -2,6 +2,12 @@
 
 > try xss! 
 
+## Download
+
+windows, osx, linux
+
+[download](https://github.com/akameco/try-xss-electron/releases)
+
 
 ## Dev
 
