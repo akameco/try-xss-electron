@@ -1,5 +1,7 @@
 # try-xss-electron
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/akameco/try-xss-electron.svg)](https://greenkeeper.io/)
+
 > try xss! 
 
 ## Download
